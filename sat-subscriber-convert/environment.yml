@@ -1,0 +1,11 @@
+name: env
+channels:
+  - anaconda
+  - conda-forge
+  - eumetsat
+dependencies:
+   - epct
+   - boto3
+   - paho-mqtt
+   - requests
+   - jsonschema

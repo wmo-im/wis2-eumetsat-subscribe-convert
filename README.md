@@ -3,7 +3,7 @@ subscribe to eumetsat-data on WIS2 and convert and store output in S3-bucket
 
 input-topic is subscribed by sat-subscriber-conver/data_mappings.csv
 
-used in WMO demo
+used in WMO INFCOM demo
 
 Requires a .env file containing
 
@@ -17,7 +17,12 @@ S3_KEY_ID='XXX'
 S3_SECRET_KEY='XXX'
 S3_BUCKET='mybucket'
 
-# for encrypted data
+# for restricted data
 ORIGIN_USERNAME='XXX'
 ORIGIN_PASSWORD='XXX'
+```
+
+Run with
+```bash
+docker-compose -f docker-compose-sat-subscriber.yml --env-file .env
 ```

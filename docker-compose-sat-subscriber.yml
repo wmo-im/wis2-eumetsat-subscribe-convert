@@ -1,0 +1,8 @@
+services:
+  sat-subscribe-convert:
+    container_name: sat-subscribe-convert
+    build: ./sat-subscriber-convert
+    env_file:
+      - .env
+    #volumes:
+    #  - ./sat-subscriber-convert/data_mapping.csv:/tmp/data_mapping.csv
